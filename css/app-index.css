@@ -1,0 +1,297 @@
+/*
+Stylesheet: Prototype B CSS for Index and Category Overview Pages
+Created By: Prabhjot Bains, Kim Tang, Prachi Sapkota, Kristina Ibrahim
+*/
+
+/* Navigation styling*/
+.topbar-responsive {
+  background: white;
+  padding: 1rem 1.5rem;
+}
+
+.topbar-responsive .topbar-responsive-logo {
+  color: #fefefe;
+  vertical-align: middle;
+  max-width: 30px;
+  max-height: 30px;
+  height: auto;
+  width: auto;
+}
+
+.topbar-responsive .menu {
+  background: white;
+}
+
+.topbar-responsive .menu li:last-of-type {
+  margin-right: 0;
+}
+
+.topbar-responsive .menu a {
+  color: black;
+  transition: color 0.15s ease-in;
+}
+
+.topbar-responsive .menu a:hover {
+  color: #b4841e;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive .menu a {
+    padding: 0.875rem 0;
+  }
+}
+
+.topbar-responsive .menu .topbar-responsive-button {
+  color: black;
+  border-color: black;
+  border-radius: 5000px;
+  transition: color 0.15s ease-in, border-color 0.15s ease-in;
+}
+
+.topbar-responsive .menu .topbar-responsive-button:hover {
+  color: #b4841e ;
+  border-color: #c6d1d8;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive .menu .topbar-responsive-button {
+    width: 100%;
+    margin: 0.875rem 0;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive {
+    padding: 0.75rem;
+  }
+  .topbar-responsive .top-bar-title {
+    position: relative;
+    width: 100%;
+  }
+  .topbar-responsive .top-bar-title span {
+    position: absolute;
+    right: 0;
+    border: 1px solid #fefefe;
+    border-radius: 5px;
+    padding: 0.25rem 0.45rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .topbar-responsive .top-bar-title span .menu-icon {
+    margin-bottom: 4px;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive-links {
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    width: 100%;
+    -webkit-animation: fadeIn 1s ease-in;
+            animation: fadeIn 1s ease-in;
+  }
+}
+
+nav li {
+  font-family: "Inter", sans-serif;
+}
+
+
+div > input {
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  background-image: url("../img/navborder.png");
+}
+
+/* Add this to hide menu items on mobile by default */
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive-links {
+    display: none; /* Hide menu by default on mobile */
+  }
+  /* Show menu when it has the 'open' class (when hamburger is clicked) */
+  .topbar-responsive-links.open {
+    display: block;
+  }
+}
+
+
+
+/* Image Styling*/
+#logo-img {
+  max-width: 100px;
+  max-height: 100px;
+  height: auto;
+  width: auto;
+}
+
+img {
+  height:auto;
+  width:auto;
+}
+
+
+/* text formatting*/
+p {
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+h1, h2 {
+text-align: center;
+color:black;
+font-family: "Inter", sans-serif;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+/* Popular articles formatting */
+#pop {
+text-align: left;
+color:black;
+font-family: "Inter", sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+ul > li {
+text-align: left;
+color:black;
+font-family: "Inter", sans-serif;
+font-size: 20px;
+font-style: normal;
+line-height: normal;
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+
+
+/* this is for our hyperlinks */
+a {
+  line-height: inherit;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+  color: #191970;
+}
+
+a:hover, a:focus {
+  color: #b4841e;
+}
+
+
+/* button stylng*/
+button {
+  background-color: #b4841e;
+  color: white;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 800px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.cta {
+  border-radius: 12px;
+}
+
+.cta a:hover {
+  color:white;
+}
+
+/* Box Model parameters */
+header {
+  margin: 10px 10px;
+  padding: 20px 20px;
+  border: 0px;
+}
+
+div section {
+  padding: 8px 26px 22px 26px;
+  margin: 10px 10px;
+  border: 0px;  
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.30);
+  box-sizing: border-box;
+}
+
+#contact-button {
+  padding: 8px 26px 22px 26px;
+  margin: 10px 10px;
+  border: 0px;  
+}
+
+/* Progress loading bar */
+
+#myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+}
+
